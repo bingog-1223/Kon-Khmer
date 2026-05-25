@@ -1,0 +1,181 @@
+/* header */
+.header {
+  display: flex;
+  border: none;
+  background-color: black;
+  justify-content: space-between;
+  margin: 15px;
+}
+.header .card {
+  border: none;
+  background-color: black;
+  color: white;
+  gap: 20px;
+}
+.header .card h3 {
+  padding: 10px;
+  font-size: 15px;
+}
+.header .card h3 i {
+  padding: 5px;
+}
+
+.container {
+  background-color: white;
+  /* ប្រើសម្រាប់រំកិលអក្សរទៅខាងស្ដាំ */
+  display: flex;
+  /* ប្រើសម្រាប់រំកិល ojectទាំងមកកណ្ដាល */
+  align-items: center;
+  /* ប្រើសម្រាប់ដាក់គម្លាត់logoនិងអក្សរអោយឆ្ងាយពីរគ្នា */
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: 0px 0px 8px 0px black;
+}
+/* meun */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 10px;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 18px;
+}
+.menu li a:hover {
+  background-color: orange;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+.menu li a i {
+  margin-right: 8px;
+  font-size: 15px;
+  color: gray;
+}
+/* banner */
+.banner img {
+  width: 100%;
+  margin-top: 10px;
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.logo {
+  width: 75px;
+  height: 60px;
+  font-size: 100%;
+  border-radius: 10px;
+}
+table {
+  font-size: 100%;
+}
+td {
+  font-size: 100%;
+}
+tr {
+  font-size: 100%;
+}
+.banner img {
+  margin-left: 109px;
+  flex-wrap: wrap;
+  width: 85.8%;
+}
+.Catelory {
+  display: flex;
+  /* background-color: whitesmoke; */
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+.Catelory .card {
+  margin: 10px;
+  width: 250px;
+  height: auto;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.card img{
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    display: grid;
+    margin-left: 50px;
+}
+.meun-icon{
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+.Catelory .card:hover{
+  border: 1px solid blue;
+}
+
+/* screen for responsive for mobile */
+@media screen and (max-width: 768px) {
+    .menu{
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        width: 94%;
+        background-color: white;
+        z-index: 1;
+        flex-direction: column;
+        padding: 2px;
+    }
+    .meun-icon{
+        display: block;
+    }
+    .menu.active{
+        display: flex;
+    }
+}
+
+
+.Producer{
+  display: flex;
+  width: 100%;
+}
+.Producer .cards{
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  position: relative;
+}
+.cards img{
+  width: 200px;
+  height: 200px;
+  align-items: center;
+}
+.cards p{
+  text-align: center;
+}
+.cards h1{
+  text-align: center;
+  color: red;
+}
+.cards h6{
+  /* text-align: justify; */
+  padding: 5px;
+  text-align: center;
+}
+button{
+  width: 100%;
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.cards
